@@ -1,0 +1,64 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome";
+
+// make all images responsive by default
+img {
+  @extend .img-responsive;
+  margin: 0 auto;
+  width: 20%;
+  height: 20%;
+  float: left;
+}
+
+img:hover {
+  transition: all 0.4s ease-in-out;
+  transform-style: preserve-3d;
+}
+
+body {
+  font-family: 'Ubuntu';
+  padding-bottom: 3%;
+  width: 95%;
+  padding-left: 5%;
+  margin-top: 5%; // accommodate the navbar
+}
+
+.btn {
+  border-radius: 0px;
+}
+
+.header {
+  @extend .text-center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+}
+
+.maintext {
+  font-family: 'Abel', sans-serif;
+  font-size: 140%;
+}
+
+.form {
+  @extend .form-control;
+  @extend .text-center;
+  width: 20%;
+}
+
+/*MORPH*/
+.morph {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.morph:hover {
+  border-radius: 50%;
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
